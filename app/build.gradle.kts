@@ -7,6 +7,10 @@ plugins {
 
 android {
     compileSdkVersion(28)
+
+    sourceSets["main"].java.srcDir("src/main/kotlin")
+    sourceSets["androidTest"].java.srcDir("src/androidTest/kotlin")
+    sourceSets["test"].java.srcDir("src/test/kotlin")
 }
 
 version = "0.0.1"
