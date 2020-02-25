@@ -7,5 +7,6 @@ import cucumber.api.android.CucumberAndroidJUnitRunner
 
 @CucumberOptions(
         features = ["features"],
-        glue = ["com.onmycrowd.recharge.users.ui"])
+        glue = ["com.onmycrowd.recharge.users.ui"],
+        plugin = ["pretty"])
 class FirstConfig
