@@ -61,6 +61,7 @@ dependencies {
     androidTestImplementation("org.hamcrest:hamcrest-library:1.3")
     // Optional -- UI testing with Espresso
     androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
+    androidTestImplementation("androidx.test.espresso:espresso-intents:3.2.0")
     //For cucumber
     androidTestImplementation("io.cucumber:cucumber-android:4.4.0")
     androidTestImplementation("io.cucumber:cucumber-picocontainer:4.4.0")
