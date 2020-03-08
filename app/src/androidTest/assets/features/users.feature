@@ -6,3 +6,8 @@ Feature: App's main activity
     When the main activity is shown
     Then there should be a link to  sing in
     And there should be a link to sign up
+
+  Scenario: The sing in button is clicked
+    Given the main activity is shown
+    When the sign in link is tapped
+    Then the sign in activity should be shown
