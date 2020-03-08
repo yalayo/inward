@@ -29,11 +29,12 @@ class MainActivityStepDefs {
     @Then("there should be a link to  sing in")
     fun there_should_be_a_link_to_sing_in() {
         ActivityScenario.launch(MainActivity::class.java)
-        onView(withText("Sign Up")).check(matches(isDisplayed()))
+        onView(withText("Sign In")).check(matches(isDisplayed()))
     }
 
     @Then("there should be a link to sign up")
     fun there_should_be_a_link_to_sign_up() {
         ActivityScenario.launch(MainActivity::class.java)
+        onView(withText("Sign Up")).check(matches(isDisplayed()))
     }
 }
