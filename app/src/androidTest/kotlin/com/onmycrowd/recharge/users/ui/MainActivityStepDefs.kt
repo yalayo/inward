@@ -3,8 +3,7 @@ package com.onmycrowd.recharge.users.ui
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
-import androidx.test.espresso.matcher.ViewMatchers.withId
+import androidx.test.espresso.matcher.ViewMatchers.*
 import com.onmycrowd.recharge.R
 import com.onmycrowd.recharge.main.ui.MainActivity
 import cucumber.api.PendingException
@@ -30,6 +29,7 @@ class MainActivityStepDefs {
     @Then("there should be a link to  sing in")
     fun there_should_be_a_link_to_sing_in() {
         ActivityScenario.launch(MainActivity::class.java)
+        onView(withText("Sign Up")).check(matches(isDisplayed()))
     }
 
     @Then("there should be a link to sign up")
